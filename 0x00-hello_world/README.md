@@ -1,0 +1,1 @@
+This project contains the beginning principles in C programming including shell
