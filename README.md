@@ -1,1 +1,1 @@
-# holberton-low_level_programming
+This repository contains the projects in C programming 
