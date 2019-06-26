@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  This file returns 1 whether the passed argument is a lowercase or uppercase alphabatical character and returns 0 if it is neither of those
  */
