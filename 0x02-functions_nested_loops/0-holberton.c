@@ -1,6 +1,7 @@
 #include <holberton.h>
 int main(void)
 {
-  _putchar("Holberton\n");
+  _putchar("Holberton");
+  _putchar("\n")
   return (0);
 }
