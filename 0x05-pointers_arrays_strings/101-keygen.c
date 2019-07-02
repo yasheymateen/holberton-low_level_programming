@@ -9,24 +9,25 @@
 
 int main(void)
 {
-	int sum, i, r;
-
-	char a[63] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	char password[100];
+	int sum = 2772;
+	char c;
 
 	srand(time(NULL));
-	sum = 0;
-	i = 0;
 
-	while (sum < (2772 - 122))
+	while (sum > GRAPH_MAX)
 	{
-		r = rand() % 62;
-		password[i] = a[r];
-		sum += password[i];
-		i++;
+		c = rand() % (GRAPH_MAX - GRAPH_MIN) + GRAPH_MIN;
+
+		sum -= c;
+
+		if (sum < GRAPH_MIN)
+		{
+			c -= (GRAPH_MIN - sum);
+			sum = GRAPH_MIN;
+		}
+		putchar(c);
 	}
-	r = 2772 - sum;
-	password[i] = r;
-	printf("%s\n",  password);
+	putchar(sum);
+
 	return (0);
 }
