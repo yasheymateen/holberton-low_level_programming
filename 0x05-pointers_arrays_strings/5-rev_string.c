@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-*strlen - reverses a string.
+*rev_string- reverses a string.
 *
 * Return: void.
 */
-int _strlen(char *s)
+void rev_string(char *s)
 {
 	int i = 0;
 	int j = 0;
