@@ -1,0 +1,1 @@
+This project contains the assignments on pointers/arrays and how to use them
