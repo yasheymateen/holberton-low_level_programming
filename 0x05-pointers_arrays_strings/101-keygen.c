@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	int sum, i, j;
+	int sum, i, r;
 
 	char a[63] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	char pass[100];
+	char password[100];
 
 	srand(time(NULL));
 	sum = 0;
@@ -20,13 +20,13 @@ int main(void)
 
 	while (sum < (2772 - 122))
 	{
-		j = rand() % 62;
-		pass[i] = a[j];
-		sum += pass[i];
+		r = rand() % 62;
+		password[i] = a[r];
+		sum += password[i];
 		i++;
 	}
-	j = 2772 - sum;
-	pass[i] = j;
-	printf("%s\n",  pass);
+	r = 2772 - sum;
+	password[i] = r;
+	printf("%s\n",  password);
 	return (0);
 }
