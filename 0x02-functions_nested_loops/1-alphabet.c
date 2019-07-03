@@ -9,18 +9,11 @@
 
 void print_alphabet(void)
 {
-	int c;
+int c;
 
-	for (c = 'a'; c <= 'z'; ++c)
-		_putchar(c);
-	_putchar('\n');
-}#include <holberton.h>
-void print_alphabet(void)
+for (c = 'a'; c <= 'z'; c++)
 {
-  char i;
-  for(i='a'; i<='z'; i++)
-    {
-      _putchar(i);
-    }
-  _putchar('\n');
+_putchar(c);
+}
+_putchar('\n');
 }
