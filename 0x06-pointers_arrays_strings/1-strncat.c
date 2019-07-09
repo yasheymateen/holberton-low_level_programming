@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * _strncpy - concatenates two strings.
  * @dest: destination string.
