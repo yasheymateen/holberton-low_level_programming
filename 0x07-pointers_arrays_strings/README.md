@@ -1,0 +1,1 @@
+Project folder for more advanced assignments in pointers, arrays, and strings
