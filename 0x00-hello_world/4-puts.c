@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * puts - Prints out string
+ * main - Prints out string
  * Return: void
  */
 int main(void)
