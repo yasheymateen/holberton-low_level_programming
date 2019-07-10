@@ -1,14 +1,14 @@
 #include "holberton.h"
-
 /**
- * This file returns 1 whether the passed argument is a lowercase or uppercase
- * alphabetical character and returns 0 if it is neither of those
+ * _isalpha - checks for alphabetic character
+ * @c: character to check
+ * Return: 1 if c is letter, 0 otherwise
  */
 
 int _isalpha(int c)
 {
-  if ((c>='a' && c<= 'z') || (c>='A' && c<='Z'))
-    return(1);
-  else
-    return(0);
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+return (1);
+else
+return (0);
 }
