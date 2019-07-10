@@ -1,15 +1,17 @@
 #include "holberton.h"
-
 /**
- * main - entry point
- *
+ * main - prints Holberton followed by new line
  * Return: 0
  */
 int main(void)
 {
-	char *holberton;
+char c[] = "Holberton";
+int i;
 
-	for (holberton = "Holberton\n"; *holberton != '\0'; ++holberton)
-		_putchar(*holberton);
-	return (0);
+for (i = 0; i < 9; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
+return (0);
 }
