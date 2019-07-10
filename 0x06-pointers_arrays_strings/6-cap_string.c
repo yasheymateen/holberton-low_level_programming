@@ -5,7 +5,7 @@
  * Return: char string
  */
 
-char *cap_string(char a)
+char *cap_string(char *a)
 {
   int i, x;
   char ind[] = " \t\n,;.!/\"(){}";
