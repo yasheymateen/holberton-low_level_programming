@@ -14,11 +14,9 @@ while (*s != '\0')
 for (x = 0; accept[x] != '\0'; x++)
 {
 if (*s == accept[x])
-{
 return (s);
-}
-}
-s++;
-}
+ }
+ s++;
+ }
 return (0);
 }
