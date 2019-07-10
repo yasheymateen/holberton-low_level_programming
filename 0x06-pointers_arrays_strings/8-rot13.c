@@ -7,20 +7,21 @@
 
 char *rot13(char *a)
 {
-int i;
+	int x, j;
 
-while (a[i] != '\0')
-{
-if ((a[i] >= 'a' && a[i] < 'n') || (a[i] >= 'A' && a[i] < 'N'))
-{
-a[i] = (a[i] + 13);
-}
-else
-while ((a[i] > 'm' && a[i] <= 'z') || (a[i] > 'M' && a[i] <= 'Z'))
-{
-a[i] = (a[i] - 13);
-}
-i++;
-}
-return (a);
+	char rot[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char alphabet[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (x = 0; a[x] != '\0'; x++)
+	{
+		for (j = 0; rot[j] != '\0'; j++)
+		{
+			if (a[x] == rot[j])
+			{
+				a[x] = alphabet[j];
+				break;
+			}
+		}
+	}
+	return (a);
 }
