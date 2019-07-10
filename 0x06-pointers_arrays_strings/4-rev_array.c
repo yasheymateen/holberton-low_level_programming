@@ -12,7 +12,7 @@ int x, tmp;
 
 x = 0;
 tmp = 0;
-n-= 1;
+n -= 1;
 
 while (x <= n)
 {
