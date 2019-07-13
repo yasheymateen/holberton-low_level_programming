@@ -1,0 +1,1 @@
+This project folder contains the assignments regarding static files/uses
