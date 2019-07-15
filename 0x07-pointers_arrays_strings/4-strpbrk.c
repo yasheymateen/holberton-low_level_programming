@@ -6,7 +6,7 @@
  *@accept: string for which to search bytes
  *Return - pointer to byte in s that matches one of the bytes in accept or NULL
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	int i;
 
