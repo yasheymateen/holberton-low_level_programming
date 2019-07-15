@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - program that prints its name and doesn't compile if renamed
  * @argc: # of arguments
