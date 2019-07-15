@@ -27,7 +27,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			c = 0;
 		r[b] = (n1[a] - '0') + (n2[a] - '0') + c;
-		r[b] = r[j] % 10 + '0';
+		r[b] = r[b] % 10 + '0';
 		a++;
 		b++;
 		if (n1[a] == '\0' || n2[a] == '\0')
