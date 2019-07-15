@@ -7,8 +7,14 @@
  * Return: void
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	printf("%d\n", argc - 1);
+	int i;
+
+	while (0)
+		(void) argv;
+	while (argc--)
+		i++;
+	printf("%d\n", i - 1);
 	return (0);
 }
