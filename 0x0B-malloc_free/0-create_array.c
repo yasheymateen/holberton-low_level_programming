@@ -23,5 +23,5 @@ i++;
 }
 if (arr == NULL)
 return (NULL);
-return (arr);
+return (*arr);
 }
