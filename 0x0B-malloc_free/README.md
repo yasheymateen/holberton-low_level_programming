@@ -1,0 +1,1 @@
+This project folder contains the assignments for malloc and memory allocation
