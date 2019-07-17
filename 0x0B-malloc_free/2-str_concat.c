@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
+ * _strlen - function to get length of a string input
  * @s: address of string input
- * @length: length of string
  * Return: length of string
  */
 
