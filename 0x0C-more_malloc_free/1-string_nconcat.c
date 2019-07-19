@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "holberton.h"
+int _strlen(char *s);
 /**
  * string_nconcat - concatenates two strings
  * @s1: string to copy
@@ -17,23 +18,34 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (count1 = 0; s1[count1]; count1++)
-		;
-	for (count2 = 0; s2[count2]; count2++)
-		;
-	if (count2 > n)
-		count2 = n;
-	else
+
+	count1 = _strlen(s1);
+	count2 = _strlen(s2);
+	if (n > count2)
 		n = count2;
-	size = count1 + count2 + 1;
-	s = malloc(size * sizeof(char));
+	s = malloc(sizeof(char) * (count1 + n + 1));
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < size - 1; i++)
-		if (i < count1)
-			s[i] = s1[i];
-		else
-			s[i] = s2[i - count1];
-	s[size] = '\0';
+	for (i = 0; s1[i]; i++)
+		s[i] = s1[i];
+	for (size = 0; size < n; size++, i++)
+		s[i] = s2[size];
+	s[i] = '\0';
 	return (s);
+}
+
+/**
+ * _strlen - returns length of string
+ * @s: string
+ * Return: length of string
+ */
+
+int _strlen(char *s)
+{
+	int length, i;
+
+	length = 0;
+	for (i = 0; s[i] != '\0'; i++)
+		length++;
+	return (length);
 }
