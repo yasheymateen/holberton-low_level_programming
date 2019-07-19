@@ -20,19 +20,17 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
+	nptr = ptr;
+	arr = malloc(new_size);
+	if (arr == NULL)
+		return (NULL);
 	if (ptr == NULL)
 	{
-		arr = malloc(new_size);
 		return (arr);
 	}
-	if (new_size > old_size)
-	{
-		arr = malloc(new_size * sizeof(char));
-		nptr = ptr;
-		for (i = 0; i < old_size; i++)
-			arr[i] = nptr[i];
-		free(ptr);
-		return (arr);
-	}
+	for (i = 0; i < old_size && i < new_size; i++)
+		arr[i] = nptr[i];
+	arr = (void *) arr;
+	free(ptr);
 	return (arr);
 }
