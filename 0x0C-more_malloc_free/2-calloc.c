@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * _calloc - function that allocates memory for an array using malloc
+ * _calloc - function that allocates memory for an arr using malloc
  * @nmemb: # of elements to allocate memory for
  * @size: size of array
  * Return: array that is mallocated
@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arr = (char *) arr;
 
 	for (n = 0; n < (nmemb * size); n++)
-		arr[i] = 0;
+		arr[n] = 0;
 	arr = (void *) arr;
 	return (arr);
 }
