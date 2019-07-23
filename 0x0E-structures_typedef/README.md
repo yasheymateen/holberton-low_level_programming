@@ -1,0 +1,1 @@
+This folder contains assignments for structures, and when to use them
