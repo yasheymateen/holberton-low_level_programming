@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 /**
  * new_dog - This function creates a new dog
  * @name: dog name
  * @age: dog age
  * @owner: dog's owner
+ * Return: new dog information
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int name_len, own_len;
+	int name_len, own_len, i;
 	dog_t *new;
 
 	new = malloc(sizeof(dog_t));
