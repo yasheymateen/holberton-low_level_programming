@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTINO_POINTERS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,4 +15,4 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 
-#endif /* HOLBERTON_H */
+#endif /* FUNCTION_POINTERS_H */
