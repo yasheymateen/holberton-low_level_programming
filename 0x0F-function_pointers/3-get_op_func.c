@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 #include "3-calc.h"
-
+int _strcmp(char *s1, char *s2);
 /**
  * get_op_func - finds the right function to use
  * @s: pointer
