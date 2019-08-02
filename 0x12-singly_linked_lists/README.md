@@ -1,0 +1,1 @@
+This folder contains the assignments for singly linked lists and how to use them
