@@ -6,10 +6,10 @@
 #define BUFFSIZE 1204
 
 /**
- * main - cps contents of one file to another
+ * main - copies contents of one file to another
  * @ac: arguement count
- * @av: arguement list: file names
- * Return: 0;
+ * @av: arguement list
+ * Return: void
  */
 
 int main(int ac, char **av)
