@@ -1,0 +1,1 @@
+This project folder dives into dynamic and static libraries
