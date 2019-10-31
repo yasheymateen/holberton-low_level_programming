@@ -1,0 +1,1 @@
+This project contains assignments on sorting algorithms
