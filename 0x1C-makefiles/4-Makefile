@@ -14,7 +14,7 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-flcean:
+fclean:
 	$(RM) *~ $(NAME)
 	$(RM) $(OBJ)
 
