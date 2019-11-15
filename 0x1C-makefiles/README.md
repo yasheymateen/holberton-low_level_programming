@@ -1,0 +1,1 @@
+This project contains the assignments for makefiles and how to use them
